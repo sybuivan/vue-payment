@@ -1,47 +1,45 @@
 <template>
-  <div v-if="user">
-    <div class="transaction-box">
-      <h2 class="transaction-title">Edit user</h2>
-      <form class="transaction-form" @submit="editUser">
-        <label for="fullName" class="transaction-label">Full name:</label>
-        <input
-          type="text"
-          id="fullName"
-          v-model="user.fullName"
-          required
-          class="transaction-input"
-        />
+  <div class="transaction-box" v-if="user">
+    <h2 class="transaction-title">Edit user</h2>
+    <form class="transaction-form" @submit="editUser">
+      <label for="fullName" class="transaction-label">Full name:</label>
+      <input
+        type="text"
+        id="fullName"
+        v-model="user.fullName"
+        required
+        class="transaction-input"
+      />
 
-        <label for="Email" class="transaction-label">Email:</label>
-        <input
-          type="text"
-          id="Email"
-          v-model="user.email"
-          required
-          class="transaction-input"
-        />
-        <label for="Address" class="transaction-label">Address:</label>
-        <input
-          type="text"
-          id="Address"
-          v-model="user.address"
-          required
-          class="transaction-input"
-        />
-        <label for="remaining-amount" class="transaction-label"
-          >Remaining amount:</label
-        >
-        <input
-          type="number"
-          id="remaining-amount"
-          v-model="user.remainingAmount"
-          required
-          class="transaction-input"
-        />
+      <label for="Email" class="transaction-label">Email:</label>
+      <input
+        type="text"
+        id="Email"
+        v-model="user.email"
+        required
+        class="transaction-input"
+      />
+      <label for="Address" class="transaction-label">Address:</label>
+      <input
+        type="text"
+        id="Address"
+        v-model="user.address"
+        required
+        class="transaction-input"
+      />
+      <label for="remaining-amount" class="transaction-label"
+        >Remaining amount:</label
+      >
+      <input
+        type="number"
+        id="remaining-amount"
+        v-model="user.remainingAmount"
+        required
+        class="transaction-input"
+      />
 
-        <button type="submit" class="transaction-button">Edit user</button>
-      </form>
-    </div>
+      <button type="submit" class="transaction-button">Edit user</button>
+    </form>
   </div>
 </template>
 <script></script>
