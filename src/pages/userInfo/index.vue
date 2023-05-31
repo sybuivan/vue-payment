@@ -42,13 +42,11 @@
 .box-bar__list a {
   font-weight: 600;
   padding: 10px 5px;
-  color: #fff;
   margin-bottom: 5px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   border: 1px solid #c1c1c1;
-  background: #ccc;
   width: 100%;
   display: block;
 }

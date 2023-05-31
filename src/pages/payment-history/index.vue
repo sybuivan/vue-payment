@@ -69,10 +69,15 @@ export default {
   },
 
   mounted() {
-    this.getPamentHistory;
+    if (!this.loggedIn) {
+      // Chưa đăng nhập, chuyển hướng đến trang đăng nhập
+      this.$router.push('/login');
+    } else {
+      this.getPamentHistory;
+    }
   },
   computed: {
-    ...mapState(['carts', 'paymentHistory']),
+    ...mapState(['carts', 'paymentHistory', 'loggedIn']),
     ...mapMutations(['getPamentHistory']),
   },
 
